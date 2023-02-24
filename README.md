@@ -58,6 +58,8 @@
 ### Key Features <a name="key-features"></a>
 
 - **[Creating a data model]**
+- **[Validations and Model specs]**
+- **[Processing data in models]**
 - **[Check linters]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -149,7 +151,8 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Validations and Model specs]**
+- [ ] **[Setup and controllers]**
+- [ ] **[Controllers specs]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
