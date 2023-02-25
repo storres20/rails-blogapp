@@ -28,7 +28,12 @@ RSpec.describe User, type: :model do
   end
 
   it "posts counter should be valid" do
-    expect(subject).to_not eql 1
+    expect(subject.posts_counter).to eql 1
+  end
+
+  it "posts counter should be integer" do
+    subject.posts_counter = 1.1
+    expect(subject).to_not be_valid
   end
 
   it "posts counter should be greater than or equal to 0" do
