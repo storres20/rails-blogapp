@@ -3,7 +3,7 @@ require_relative "./rails_helper.rb"
 RSpec.describe Post, type: :model do
   subject {
     Post.new(title: "AI", text: "Great post", comments_counter: 1, likes_counter: 1,
-             author_id: 10)
+             author_id: 7)
   }
 
   before { subject.save }
