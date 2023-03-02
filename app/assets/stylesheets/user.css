@@ -1,0 +1,37 @@
+.user-index {
+  width: 60%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.user-list-item {
+  display: flex;
+  gap: 30px;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+  border: 1px solid black;
+}
+
+.user-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid black;
+}
+
+.user-info h2 {
+  margin-left: 50px;
+  font-size: 1.8rem;
+}
+
+.user-info p {
+  text-align: end;
+  margin-right: 50px;
+}

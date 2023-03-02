@@ -1,9 +1,5 @@
 <h1>All Users</h1>
 
-<section>
-  <ul>
-    <li>
-      <%= render partial: "shared/user", collection: @users, as: :user %>
-    </li>
-  </ul>
+<section class="user-index">
+  <%= render partial: "shared/user", collection: @users, as: :user %>
 </section>
