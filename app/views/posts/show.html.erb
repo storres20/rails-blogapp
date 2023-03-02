@@ -1,1 +1,12 @@
 <h1>Single Post</h1>
+
+<div class="full-post">
+  <h2>Post # <%= @post.id %> by <%= @post.author.name %></h2>
+  <p>Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></p>
+  <p><%= @post.text %></p>
+  <div class="comments">
+    <% @post.comments.each do |comment| %>
+      <%= render "shared/comment", comment: comment %>
+    <% end %>
+  </div>
+</div>

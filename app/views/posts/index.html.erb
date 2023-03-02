@@ -6,7 +6,9 @@
   </div>
   <div class="post">
     <% @posts.each do |post| %>
-      <%= render "shared/post", post: post %>
+      <%= link_to user_post_path(user_id: post.author.id, id: post.id) do %>
+        <%= render "shared/post", post: post %>
+      <% end %>
       <div class="comments">
         <% post.recent_comments.each do |comment| %>
           <%= render "shared/comment", comment: comment %>
@@ -14,4 +16,5 @@
       </div>
     <% end %>
   </div>
+  <button type="button" class="btn">Pagination</button>
 </section>
