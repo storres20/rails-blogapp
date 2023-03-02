@@ -35,3 +35,59 @@ img {
   text-align: end;
   margin-right: 50px;
 }
+
+.user-show {
+  width: 60%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bio {
+  border: 1px solid black;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-post {
+  border: 1px solid black;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-post h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.like-comment {
+  text-align: end;
+}
+
+.like-comment p {
+  font-size: 0.9rem;
+}
+
+.bio p:first-child {
+  font-weight: 700;
+}
+
+.btn {
+  width: 120px;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  align-self: center;
+  border: 1px solid black;
+  font-weight: 600;
+}

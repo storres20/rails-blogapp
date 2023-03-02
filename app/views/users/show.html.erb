@@ -1,13 +1,14 @@
 <h1>Single User</h1>
 
-<section>
+<section class="user-show">
   <div class="user_header">
     <%= render "shared/user", user: @user %>
   </div>
   <div class="bio">
+    <p>Bio</p>
     <p><%= @user.bio %></p>
   </div>
-  <div class="bio">
+  <div class="posts">
     <% @recent_posts.each do |post| %>
       <%= render "shared/post", post: post %>
     <% end %>
