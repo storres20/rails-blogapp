@@ -1,0 +1,5 @@
+<%= image_tag user.photo %>
+  <div>
+    <h2><%= link_to user.name, user_path(user) %></h2>
+    <p>No. of posts: <%= user.posts_counter %></p>
+  </div>
