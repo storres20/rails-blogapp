@@ -1,1 +1,17 @@
 <h1>All Posts</h1>
+
+<section>
+  <div class="user_header">
+    <%= render partial: "shared/user", locals: { user: @user } %>
+  </div>
+  <div class="post">
+    <% @posts.each do |post| %>
+      <%= render "shared/post", post: post %>
+      <div class="comments">
+        <% post.recent_comments.each do |comment| %>
+          <%= render "shared/comment", comment: comment %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</section>
