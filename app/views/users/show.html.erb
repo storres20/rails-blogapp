@@ -1,9 +1,7 @@
 <h1>Single User</h1>
 
 <section class="user-show">
-  <div class="user_header">
-    <%= render "shared/user", user: @user %>
-  </div>
+  <%= render "shared/user", user: @user %>
   <div class="bio">
     <p>Bio</p>
     <p><%= @user.bio %></p>

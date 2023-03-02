@@ -1,20 +1,16 @@
 <h1>All Posts</h1>
 
-<section>
-  <div class="user_header">
-    <%= render partial: "shared/user", locals: { user: @user } %>
-  </div>
-  <div class="post">
-    <% @posts.each do |post| %>
-      <%= link_to user_post_path(user_id: post.author.id, id: post.id) do %>
-        <%= render "shared/post", post: post %>
-      <% end %>
+<section class="post-index">
+  <%= render partial: "shared/user", locals: { user: @user } %>
+  <% @posts.each do |post| %>
+    <%= link_to user_post_path(user_id: post.author.id, id: post.id), class: "post" do %>
+      <%= render "shared/post", post: post %>
       <div class="comments">
         <% post.recent_comments.each do |comment| %>
           <%= render "shared/comment", comment: comment %>
         <% end %>
       </div>
     <% end %>
-  </div>
+  <% end %>
   <button type="button" class="btn">Pagination</button>
 </section>
