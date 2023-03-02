@@ -1,1 +1,16 @@
 <h1>Single User</h1>
+
+<section>
+  <div class="user_header">
+    <%= render "shared/user", user: @user %>
+  </div>
+  <div class="bio">
+    <p><%= @user.bio %></p>
+  </div>
+  <div class="bio">
+    <% @recent_posts.each do |post| %>
+      <%= render "shared/post", post: post %>
+    <% end %>
+  </div>
+  <button type="button"><%= link_to "See all posts", user_posts_path(@user) %></button>
+</section>
