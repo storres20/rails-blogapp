@@ -1,11 +1,3 @@
-.post-index {
-  width: 60%;
-  margin: 30px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
 .post {
   display: flex;
   flex-direction: column;
@@ -18,4 +10,21 @@
   flex-direction: column;
   gap: 5px;
   font-size: 0.95rem;
+}
+
+.full-post-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.full-post {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-likes-comments {
+  text-align: end;
 }

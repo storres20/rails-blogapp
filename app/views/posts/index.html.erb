@@ -1,14 +1,12 @@
 <h1>All Posts</h1>
 
-<section class="post-index">
+<section>
   <%= render partial: "shared/user", locals: { user: @user } %>
   <% @posts.each do |post| %>
     <%= link_to user_post_path(user_id: post.author.id, id: post.id), class: "post" do %>
       <%= render "shared/post", post: post %>
       <div class="comments">
-        <% post.recent_comments.each do |comment| %>
-          <%= render "shared/comment", comment: comment %>
-        <% end %>
+        <%= render "shared/comment", post: post %>
       </div>
     <% end %>
   <% end %>

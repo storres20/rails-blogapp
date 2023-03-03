@@ -38,3 +38,24 @@ a:active {
 ul {
   list-style: none;
 }
+
+section {
+  width: 60%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.btn {
+  width: 120px;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  align-self: center;
+  border: 1px solid black;
+  font-weight: 600;
+}
+
+.border-black {
+  border: 1px solid black;
+}

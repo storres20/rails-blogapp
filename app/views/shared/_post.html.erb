@@ -1,6 +1,6 @@
-<div class="user-post">
+<div class="user-post border-black">
   <h2>Post #<%= post.id %></h2>
-  <p><%= truncate(post.text, length: 150, omission: "...") %></p>
+  <p class="post-text"><%= post.text %></p>
   <div class="like-comment">
     <p>Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></p>
   </div>
