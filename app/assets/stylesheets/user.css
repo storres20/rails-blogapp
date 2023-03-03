@@ -1,0 +1,74 @@
+.user-list-item {
+  display: flex;
+  gap: 30px;
+}
+
+img {
+  width: 120px;
+  height: 120px;
+}
+
+.user-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.user-info h2 {
+  margin-left: 50px;
+  font-size: 1.8rem;
+}
+
+.user-info p {
+  text-align: end;
+  margin-right: 50px;
+}
+
+.bio {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-post {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-post h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.like-comment {
+  text-align: end;
+}
+
+.like-comment p {
+  font-size: 0.9rem;
+}
+
+.bio p:first-child {
+  font-weight: 700;
+}
+
+.post-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post-text2 {
+  word-break: break-word;
+}
