@@ -14,7 +14,7 @@ class PostsController < ApplicationController
     @post.comments_counter = 0
     @post.likes_counter = 0
     if @post.save
-      flash[:notice] = "Post created successfully"
+      flash[:notice] = 'Post created successfully'
       redirect_to user_posts_path(current_user)
     else
       flash[:alert] = "Couln't create post"
