@@ -48,14 +48,53 @@ section {
 }
 
 .btn {
-  width: 120px;
   padding: 8px 10px;
   font-size: 0.9rem;
   align-self: center;
   border: 1px solid black;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .border-black {
   border: 1px solid black;
+}
+
+.form-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.form-items {
+  text-align: start;
+  width: 75%;
+  font-size: 1rem;
+}
+
+.form-fields {
+  width: 100%;
+  padding: 5px;
+}
+
+.form-text {
+  height: 90px;
+}
+
+.back {
+  text-decoration: underline;
 }
