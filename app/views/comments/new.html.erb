@@ -1,11 +1,12 @@
-<h1>New Comment</h1>
+<div class="form-container border-black">
+  <h1>New Comment</h1>
 
-<%= form_with model: @comment, url: user_post_comments_path, local: true do |form| %>
-  <div>
-    <%= form.label :text %></br>
-    <%= form.text_field :text %>
-  </div>
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
+  <%= form_with model: @comment, url: user_post_comments_path, class: "form", local: true do |form| %>
+    <div class="form-items">
+      <%= form.text_area :text, class: "form-fields border-black form-text", placeholder: "Write a comment..." %>
+    </div>
+    <div>
+      <%= form.submit "Create comment", class: "btn" %>
+    </div>
+  <% end %>
+</div>

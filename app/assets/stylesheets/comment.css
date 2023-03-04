@@ -1,0 +1,9 @@
+.like-comment-btn {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.form-text {
+  height: 90px;
+}

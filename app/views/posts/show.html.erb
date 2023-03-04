@@ -7,7 +7,7 @@
     <p class="post-text2"><%= @post.text %></p>
     <div class="like-comment-btn">
       <%= form_with model: @like, url: user_post_likes_path(user_id: @post.author.id, post_id: @post.id), local: true do |form| %>
-        <button type="button" class="btn"><%= form.submit 'Add a like' %></button>
+        <%= form.submit "Add a like", class: "btn" %>
       <% end %>
       <button type="button" class="btn"><%= link_to "Add a comment", new_user_post_comment_path(user_id: @post.author.id, post_id: @post.id) %></button>
     </div>
