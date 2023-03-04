@@ -6,8 +6,10 @@
     <p class="post-likes-comments">Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></p>
     <p class="post-text2"><%= @post.text %></p>
     <div class="like-comment-btn">
-      <button type="button" class="btn"><% "Add a like" %></button>
-      <button type="button" class="btn"><%= link_to "Add a comment", new_user_post_comment_path(user_id: @post.author, post_id: @post) %></button>
+      <%= form_with model: @like, url: user_post_likes_path(user_id: @post.author.id, post_id: @post.id), local: true do |form| %>
+        <button type="button" class="btn"><%= form.submit 'Add a like' %></button>
+      <% end %>
+      <button type="button" class="btn"><%= link_to "Add a comment", new_user_post_comment_path(user_id: @post.author.id, post_id: @post.id) %></button>
     </div>
   </div>
   <div class="comments">
