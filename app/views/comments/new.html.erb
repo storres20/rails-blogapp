@@ -1,1 +1,11 @@
 <h1>New Comment</h1>
+
+<%= form_with model: @comment, url: user_post_comments_path, local: true do |form| %>
+  <div>
+    <%= form.label :text %></br>
+    <%= form.text_field :text %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
