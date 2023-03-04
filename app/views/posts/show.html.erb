@@ -7,7 +7,7 @@
     <p class="post-text2"><%= @post.text %></p>
     <div class="like-comment-btn">
       <button type="button" class="btn"><% "Add a like" %></button>
-      <button type="button" class="btn"><%= link_to "Add a comment", new_user_post_comment_path(user_id: @post.author.id, post_id: @post.id)  %></button>
+      <button type="button" class="btn"><%= link_to "Add a comment", new_user_post_comment_path(user_id: @post.author, post_id: @post) %></button>
     </div>
   </div>
   <div class="comments">
