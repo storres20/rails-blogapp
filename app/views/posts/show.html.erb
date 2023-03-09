@@ -2,7 +2,7 @@
 
 <section class="full-post-section">
   <div class="full-post border-black">
-    <h2>Post # <%= @post.id %> by <%= @post.author.name %></h2>
+    <h2>Post # <%= @post.title %> by <%= @post.author.name %></h2>
     <p class="post-likes-comments">Comments: <%= @post.comments_counter %>, Likes: <%= @post.likes_counter %></p>
     <p class="post-text2"><%= @post.text %></p>
     <div class="like-comment-btn">

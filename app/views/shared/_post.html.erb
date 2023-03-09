@@ -1,5 +1,5 @@
 <div class="user-post border-black">
-  <h2>Post #<%= post.id %></h2>
+  <h2>Post #<%= post.title %></h2>
   <%= link_to user_post_path(user_id: post.author.id, id: post.id), class: "post" do %>
     <p class="post-text"><%= post.text %></p>
   <% end %>
