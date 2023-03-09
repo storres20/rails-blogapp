@@ -3,12 +3,10 @@
 <section>
   <%= render partial: "shared/user", locals: { user: @user } %>
   <% @posts.each do |post| %>
-    <%= link_to user_post_path(user_id: post.author.id, id: post.id), class: "post" do %>
       <%= render "shared/post", post: post %>
       <div class="comments">
         <%= render "shared/comment", post: post %>
       </div>
-    <% end %>
   <% end %>
   <button type="button" class="btn">Pagination</button>
 </section>
