@@ -61,7 +61,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: blog_app
+  database: blog_app_test
   username: postgres
   password: 123456
   host: localhost

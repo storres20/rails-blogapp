@@ -136,6 +136,11 @@ You can deploy this project using:
 - Twitter: [@italolonkan](https://twitter.com/italolonkan)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/italo-lon-kan)
 
+👤 **Vanel Nwaba**
+
+- GitHub: [@Vanelnw](https://github.com/vanelnw)
+- LinkedIn: [Vanel Nwaba](https://www.linkedin.com/va-nw)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
