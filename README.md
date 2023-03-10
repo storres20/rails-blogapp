@@ -139,6 +139,7 @@ You can deploy this project using:
 👤 **Vanel Nwaba**
 
 - GitHub: [@Vanelnw](https://github.com/vanelnw)
+- Twitter: [@vanel](https://twitter.com/vanel)
 - LinkedIn: [Vanel Nwaba](https://www.linkedin.com/va-nw)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
