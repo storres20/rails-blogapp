@@ -1,0 +1,35 @@
+<div class="sign-in-up border-black">
+  <h2>Sign up</h2>
+
+  <%= form_for(resource, as: resource_name, data: {turbo: false}, url: registration_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+    <div class="form">
+      <div class="form-items">
+        <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Username", class: "form-fields border-black form-title" %>
+      </div>
+
+      <div class="form-items">
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "form-fields border-black form-title" %>
+      </div>
+
+      <div class="form-items">
+        <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password", class: "form-fields border-black form-title" %>
+      </div>
+
+      <div class="form-items">
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Confirm Password", class: "form-fields border-black form-title" %>
+      </div>
+    </div>
+    <div class="sign-btn-checkbox">
+      <div class="actions">
+        <%= f.submit "Sign up", class: "btn btn-sign-in-up" %>
+      </div>
+    </div>
+  <% end %>
+  <div class="sign-btn-checkbox links">
+    <%= render "devise/shared/links" %>
+  </div>
+</div>

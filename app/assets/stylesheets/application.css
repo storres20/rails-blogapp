@@ -98,3 +98,31 @@ section {
 .back {
   text-decoration: underline;
 }
+
+.sign-in-up {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto 0 auto;
+  gap: 10px;
+  width: 40%;
+}
+
+.sign-in-up h2 {
+  text-align: center;
+}
+
+.sign-btn-checkbox {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 10px auto 0 auto;
+  gap: 10px;
+}
+
+.btn-sign-in-up {
+  width: 100%;
+}
+
+.links {
+  gap: 0;
+}

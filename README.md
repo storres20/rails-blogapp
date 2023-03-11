@@ -18,7 +18,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [� Getting Started ](#-getting-started-)
+  - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
@@ -59,6 +59,7 @@
 - **[Creating a data model]**
 - **[Validations and Model specs]**
 - **[Processing data in models]**
+- **[Add devise]**
 - **[Check linters]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
